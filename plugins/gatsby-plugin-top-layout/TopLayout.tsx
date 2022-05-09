@@ -18,7 +18,7 @@ export default function TopLayout(props: any) {
         <meta name="keywords" content="Ragnarok Online,Autopot,Macro,Opensource,Orange,Tools,4RTools,4R"/>
 
         <meta property="og:type" content="page"/>
-        <meta property="og:url" content="https://www.4rtools.dev"/>
+        <meta property="og:url" content="https://www.4rtools.com.br"/>
         <meta property="og:title" content=""/>
         <meta property="og:image" content="https://raw.githubusercontent.com/4RTools/4RTools/main/assets/images/combo-tools.png"/>
         <meta property="og:description" content="Autopot, Autobuff, Skill Spammer, Macro and Switcher for Ragnarok Online 100% opensource and free for use."/>
