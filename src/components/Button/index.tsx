@@ -3,15 +3,21 @@ import styled from 'styled-components';
 import theme from '@theme'
 
 interface ButtonProps {
-    label?: string,
+    label?: string;
+    href: string;
+    bgColor?: string;
 }
 
-const SButton = styled.button`
+const SButton = styled.a`
     border-radius: 10px;
     padding: 30px;
     margin: 5px;
+    font-weight: bolder;
+    box-shadow: 1px 1px 3px black;
+    font-family: "Globotipo Variable";
+    text-decoration:none;
     cursor: pointer;
-    background-color: ${theme.primaryColor};
+    background-color: ${(props: ButtonProps) => props.bgColor? props.bgColor : theme.primaryColor};
     color: #fff;
     font-size: 1.25rem;
     border-style:none;
@@ -19,11 +25,12 @@ const SButton = styled.button`
     &:hover {
         background-color: ${theme.primaryColorDark};
     }
+
 `
 
 const Button = (props: ButtonProps) => {
 
-    return <SButton onClick={() => alert("oi")}>{props.label}</SButton>
+    return <SButton target={"_blank"} {...props} href={props.href}>{props.label}</SButton>
 }
 
 export default Button

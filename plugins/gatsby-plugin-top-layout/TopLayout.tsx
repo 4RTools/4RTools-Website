@@ -10,6 +10,27 @@ export default function TopLayout(props: any) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <meta name="language" content="en"/>
+        <title>4RTools - Official Website</title>
+        <meta name="description" content="Autopot, Autobuff, Skill Spammer, Macro and Switcher for Ragnarok Online 100% opensource and free for use."/>
+        <meta name="robots" content="index"/>
+        <meta name="author" content="4RTools Development Team"/>
+        <meta name="keywords" content="Ragnarok Online,Autopot,Macro,Opensource,Orange,Tools,4RTools,4R"/>
+
+        <meta property="og:type" content="page"/>
+        <meta property="og:url" content="https://www.4rtools.dev"/>
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content="https://raw.githubusercontent.com/4RTools/4RTools/main/assets/images/combo-tools.png"/>
+        <meta property="og:description" content="Autopot, Autobuff, Skill Spammer, Macro and Switcher for Ragnarok Online 100% opensource and free for use."/>
+
+        <meta property="article:author" content="4RTools Development Team"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@"/>
+        <meta name="twitter:title" content=""/>
+        <meta name="twitter:creator" content="@"/>
+        <meta name="twitter:description" content="Autopot, Autobuff, Skill Spammer, Macro and Switcher for Ragnarok Online 100% opensource and free for use."/>
+    
         <link
           href="https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/qa/foundation/typefaces/globotipo.css"
           rel="stylesheet"

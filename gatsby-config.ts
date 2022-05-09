@@ -3,7 +3,7 @@ import path from "path";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `4RTools`,
+    title: `4RTools - Official Website`,
     siteUrl: `https://www.4rtools.com.br`
   },
   plugins: [
@@ -26,6 +26,18 @@ const config: GatsbyConfig = {
           "@sections": path.resolve(__dirname, "src/sections"),
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `4rtools`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#f47635`,
+        theme_color: `#f47635`,
+        display: `minimal-ui`,
+        icon: `src/images/logo-4rtools.png`, // This path is relative to the root of the site.
+      },
     },
     {
     resolve: 'gatsby-plugin-google-analytics',
