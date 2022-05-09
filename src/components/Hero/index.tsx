@@ -54,7 +54,7 @@ interface IReleaseData{
 }
 
 const Hero = () => {
-    const [releaseData, setReleaseData] = useState<IReleaseData>({endpoint: "", tag: ""})
+    const [releaseData, setReleaseData] = useState<IReleaseData>({endpoint: "https://github.com/4RTools/4RTools/releases/download/v1.5.6/4RTools.-.v1.5.6.rar", tag: "v1.5.6"})
 
     useEffect(() => {
         fetch("https://api.github.com/repos/4RTools/4RTools/releases/latest")
