@@ -10,8 +10,9 @@ const fadeAnimation = keyframes`${fadeInUp}`;
 interface ISectionProps {
     title: string;
     guide: string;
-    gif: string;
+    gif?: string;
     tips?: string[];
+    video?:string;
 }
 
 const SAutopotSection = styled.div`
@@ -78,7 +79,9 @@ const Section = (props: ISectionProps) => {
                         </Col>
                         <Col xs={12} md={6}>
                             <AnimatedFrame>
-                                <Image style={{"width": "100%","borderRadius": "10px", "boxShadow": "12px 10px 30px black"}} src={props.gif}/>
+                                {props.video ? 
+                                <video style={{"width": "100%","borderRadius": "10px", "boxShadow": "12px 10px 30px black"}} playsInline autoPlay muted loop src={props.video}/> :
+                                <Image style={{"width": "100%","borderRadius": "10px", "boxShadow": "12px 10px 30px black"}} src={props.gif}/>}
                             </AnimatedFrame>
                         </Col>
                     </Row>

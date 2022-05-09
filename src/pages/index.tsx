@@ -32,7 +32,7 @@ const IndexPage = () => {
               "1. Activation Key and Delay configuration. Also a button to reset current macro.",
               "2. Up to 20 keys for configure how you want."
             ]}/>
-          <Section title="Autobuff" gif="autobuff.gif" guide="autobuff-guide.png" tips={[
+          <Section title="Autobuff" video="https://firebasestorage.googleapis.com/v0/b/rtools-1ea32.appspot.com/o/autobuff.mp4?alt=media&token=849c7daa-13b2-461e-9c2c-5b5e440c87f5" guide="autobuff-guide.png" tips={[
               "Autobuff for Stuffs and Skills",
               "More than 60 items and buffs ready for use",
               "Easy-to-add new buffs. Since our code is open, you can add extra-buffs and collaborate with us.",
