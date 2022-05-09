@@ -42,6 +42,11 @@ const DiscordIcon = styled.a`
 const AnimatedFrame = styled.div`
     animation: 0.5s ${fadeAnimation};
 `
+const SHiddenMobile = styled.div`
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+`
 
 interface IReleaseData{
     endpoint: string;
@@ -63,7 +68,9 @@ const Hero = () => {
 
     return(
     <div>
-        <Image style={{position: "fixed", width: "100%", zIndex: -1,"opacity": 0.2}} src="background.jpg"/>
+        <SHiddenMobile>
+            <Image style={{position: "fixed", width: "100%", zIndex: -1,"opacity": 0.2}} src="background.jpg"/>
+        </SHiddenMobile>
         <DiscordIcon target={"_blank"} href="https://discord.gg/AtZ2fJVtBz">
             <Image src="join-disc.png"/>
         </DiscordIcon>
@@ -74,7 +81,7 @@ const Hero = () => {
                         <Image src={"logo-4rtools.png"}/>
                     </CHero>
                 </Col>
-                <Col xs={12} md={12} style={{...alignCenter, margin: "40px 0px"}}>
+                <Col xs={12} style={{...alignCenter}}>
                     <AnimatedFrame>
                         <Button href={releaseData.endpoint} label={`Click here to download latest version (${releaseData.tag})`}/>
                         <Button href={"https://github.com/4RTools/4RTools"} bgColor="black" label={`Github Project`}/>

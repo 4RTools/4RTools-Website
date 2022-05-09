@@ -8,7 +8,7 @@ interface ButtonProps {
     bgColor?: string;
 }
 
-const SButton = styled.a`
+const SButton = styled.button`
     border-radius: 10px;
     padding: 30px;
     margin: 5px;
@@ -30,7 +30,7 @@ const SButton = styled.a`
 
 const Button = (props: ButtonProps) => {
 
-    return <SButton target={"_blank"} {...props} href={props.href}>{props.label}</SButton>
+    return <SButton {...props} onClick={() => window.open(props.href, '_blank')}>{props.label}</SButton>
 }
 
 export default Button

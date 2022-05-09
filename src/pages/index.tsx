@@ -4,12 +4,22 @@ import Image from '@components/Image'
 import '../theme/reset.css'
 import Section from "@sections/Section"
 import Footer from "@components/Footer"
+
+import styled from "styled-components"
+
+const SHiddenMobile = styled.div`
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+`
     
 // markup
 const IndexPage = () => {
   return (
     <React.Fragment>
-      <Image style={{position: "absolute", top: "6vh", transform: "scaleX(-1)", width: "290px"}}  src="kafra-png-7.png"/>
+      <SHiddenMobile>
+        <Image style={{position: "absolute", top: "6vh", transform: "scaleX(-1)", width: "290px"}}  src="kafra-png-7.png"/>
+      </SHiddenMobile>
       <Hero/>
       <main>
         <Section title="Autopot" gif="autopot.gif" guide="autopot-guide.png" tips={["1. Autopot very customizable with Yggdrasil option", "2. Automatic status recovery (Curse, Silence, Poison...)"]}/>
