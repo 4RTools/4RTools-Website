@@ -38,6 +38,13 @@ const IndexPage = () => {
               "Easy-to-add new buffs. Since our code is open, you can add extra-buffs and collaborate with us.",
               "Smart and performatic detection algorithm",
             ]}/>
+          <Section title="ATK x DEF Mode" video="https://firebasestorage.googleapis.com/v0/b/rtools-1ea32.appspot.com/o/atkdef.mp4?alt=media&token=1cb40851-dadf-4ecb-bde1-3ed2acb6d4ba" guide="atkxdef-guide.png" tips={[
+            "1. Choose a key to spam and configure delay",
+            "2. Configure DEF Mode Switch",
+            "3. Configure ATK Mode Switch",
+            "When you start to spam, ATK Mode will be activated and your gears will be changed to ATK.",
+            "Stop spam and your gears will be changed to DEF.",
+          ]}/>
       </main>
       <Footer/>
     </React.Fragment>
